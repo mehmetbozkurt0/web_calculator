@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.min.css" integrity="sha512-T7lIYojLrqj7eBrV1NvUSZplDBi8mFyIEGFGdox8Bic92Col3GVrscbJkL37AJoDmF2iAh81fRpO4XZukI6kbA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="calculator">
+        <h1><i class='bx bx-math'></i>Calculator</h1>
+        <input type="number" id="num1" placeholder="Number 1: ">
+        <input type="number" id="num2" placeholder="Number 2: ">
+        <br>
+        <button onclick="calculate('add')"><i class='bx bx-plus' ></i>Add</button>
+        <button onclick="calculate('sub')"><i class='bx bx-minus'></i>Subtract</button>
+        <button onclick="calculate('multi')"><i class='bx bx-x'></i>Multiply</button>
+        <button onclick="calculate('div')"><i class="ri-divide-line"></i></i>Divide</button>
+
+        <h3 id="result">Result: </h3>
+        <br>
+        
+        <h3>Past Operations: </h3>
+        <ul id="history"></ul>
+    </div> 
+
+
+
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
